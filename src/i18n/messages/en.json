@@ -1,0 +1,862 @@
+{
+  "app": {
+    "name": "Lumera",
+    "tagline": "Find and book beauty specialists, tattoo artists and studios"
+  },
+  "common": {
+    "language": "Language",
+    "loading": "Loading…",
+    "retry": "Try again",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "skipToContent": "Skip to content"
+  },
+  "nav": {
+    "home": "Home",
+    "designSystem": "Design system",
+    "search": "Search",
+    "partners": "For professionals",
+    "becomePartner": "Become a partner",
+    "map": "Map"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "pwa": {
+    "install": "Install app",
+    "installTitle": "Install Lumera",
+    "installBody": "Add Lumera to your home screen for quick access.",
+    "iosHint": "On iPhone/iPad: tap Share, then “Add to Home Screen”.",
+    "dismiss": "Not now"
+  },
+  "offline": {
+    "title": "You are offline",
+    "body": "Booking and payments need an internet connection. Reconnect and try again."
+  },
+  "status": {
+    "badge": "Stage 1 — Foundation",
+    "title": "Platform foundation is ready",
+    "body": "Database schema, roles & permissions, billing maths, i18n, design system and PWA shell are in place. The catalog, search and booking arrive in the next stages.",
+    "dbLabel": "Database",
+    "dbOk": "connected",
+    "dbDown": "not reachable — check DATABASE_URL",
+    "next": "Next: catalog, search and public profiles (Stage 2)"
+  },
+  "ds": {
+    "title": "Design system",
+    "subtitle": "Tokens and components shared by every page.",
+    "buttons": "Buttons",
+    "inputs": "Fields",
+    "feedback": "Feedback & states",
+    "cards": "Cards",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "name@example.com",
+    "emailError": "Enter a valid e-mail address",
+    "primary": "Primary",
+    "secondary": "Secondary",
+    "ghost": "Ghost",
+    "danger": "Danger",
+    "loadingBtn": "Saving…",
+    "toast": "Show notification",
+    "toastBody": "Your changes were saved.",
+    "alertInfo": "Informational message",
+    "alertError": "Something went wrong. Please try again.",
+    "alertSuccess": "Done! Everything worked.",
+    "sampleCardTitle": "Sample specialist card",
+    "sampleCardBody": "Large portfolio photo, rating, price and the nearest slot will live here."
+  },
+  "plan": {
+    "interval": {
+      "month": "month"
+    },
+    "seats": {
+      "one": "{count} active master",
+      "few": "{count} active masters",
+      "many": "{count} active masters",
+      "other": "{count} active masters"
+    }
+  },
+  "home": {
+    "heroTitle": "Find your beauty professional",
+    "heroSub": "Tattoo, nails, brows, lashes, barbers and studios in your city — compare prices, portfolios and free time.",
+    "categoriesTitle": "Popular categories",
+    "mastersTitle": "Popular specialists",
+    "studiosTitle": "Popular studios",
+    "recommendedTitle": "Recommended for you",
+    "citiesTitle": "Popular cities",
+    "seeAll": "See all",
+    "benefitsTitle": "Why Lumera",
+    "benefits": {
+      "b1Title": "Real reviews",
+      "b1Body": "A review can only be left after a completed visit.",
+      "b2Title": "Transparent prices",
+      "b2Body": "Prices and durations are visible upfront — no phone calls.",
+      "b3Title": "Portfolio first",
+      "b3Body": "Large photos of real work help you choose by style."
+    },
+    "partnerTitle": "Are you a specialist or a studio owner?",
+    "partnerBody": "List your profile, accept bookings and manage your team. A flat subscription — no commission on every service.",
+    "partnerCta": "Plans & pricing",
+    "worksTitle": "Fresh work from our specialists"
+  },
+  "search": {
+    "title": "Find specialists and studios",
+    "searchBtn": "Search",
+    "filters": "Filters",
+    "apply": "Apply",
+    "reset": "Reset",
+    "city": "City",
+    "anyCity": "All cities",
+    "district": "District",
+    "anyDistrict": "All districts",
+    "category": "Category",
+    "anyCategory": "All categories",
+    "sub": "Subcategory",
+    "anySub": "All subcategories",
+    "date": "Date",
+    "time": "Time from",
+    "priceMin": "Price from, UAH",
+    "priceMax": "Price to, UAH",
+    "rating": "Rating",
+    "anyRating": "Any",
+    "ratingFrom": "{count}+ ★",
+    "experience": "Experience",
+    "anyExperience": "Any",
+    "experienceFrom": "{count}+ yrs",
+    "gender": "Specialist gender",
+    "anyGender": "Any",
+    "female": "Female",
+    "male": "Male",
+    "available": "Free slot within 14 days",
+    "nearMe": "Near me",
+    "nearMeDenied": "Could not get your location",
+    "tabMasters": "Specialists",
+    "tabStudios": "Studios",
+    "sortLabel": "Sort by",
+    "sort": {
+      "rating": "Rating",
+      "popularity": "Popularity",
+      "price": "Price",
+      "distance": "Distance",
+      "nearest": "Nearest free time"
+    },
+    "results": {
+      "one": "{count} result",
+      "other": "{count} results"
+    },
+    "noResults": "Nothing found",
+    "noResultsHint": "Try changing or resetting the filters.",
+    "prev": "Previous",
+    "next": "Next",
+    "page": "Page {page} of {pages}",
+    "kmAway": "{km} km"
+  },
+  "card": {
+    "priceFrom": "from {price}",
+    "price": "{price}",
+    "noPrice": "Ask for price",
+    "nearestSlot": "Next available: {when}",
+    "noSlots": "No free time soon",
+    "reviews": {
+      "one": "{count} review",
+      "other": "{count} reviews"
+    },
+    "noReviews": "No reviews yet",
+    "experience": {
+      "one": "{count} year of experience",
+      "other": "{count} years of experience"
+    },
+    "team": {
+      "one": "{count} specialist",
+      "other": "{count} specialists"
+    },
+    "viewProfile": "View profile",
+    "atStudio": "Studio: {name}",
+    "rating": "Rated {value} out of 5"
+  },
+  "profile": {
+    "about": "About",
+    "aboutStudio": "About the studio",
+    "portfolio": "Portfolio",
+    "services": "Services & prices",
+    "hours": "Working hours",
+    "hoursTeam": "Team working hours",
+    "closed": "Closed",
+    "freeSlots": "Free time",
+    "noFreeSlots": "No free slots in the next days",
+    "bookingSoon": "Online booking arrives in the next stage. For now, contact the specialist directly.",
+    "reviews": "Reviews",
+    "noReviews": "No reviews yet",
+    "contacts": "Contacts",
+    "location": "Location",
+    "openOnMap": "Open on map",
+    "studios": "Works at",
+    "team": "Studio team",
+    "branches": "Branches",
+    "minutes": "{count} min",
+    "openImage": "Open photo",
+    "closeImage": "Close",
+    "prevImage": "Previous photo",
+    "nextImage": "Next photo",
+    "photos": "Studio photos",
+    "weekday": {
+      "0": "Monday",
+      "1": "Tuesday",
+      "2": "Wednesday",
+      "3": "Thursday",
+      "4": "Friday",
+      "5": "Saturday",
+      "6": "Sunday"
+    },
+    "weekdayShort": {
+      "0": "Mon",
+      "1": "Tue",
+      "2": "Wed",
+      "3": "Thu",
+      "4": "Fri",
+      "5": "Sat",
+      "6": "Sun"
+    },
+    "email": "E-mail",
+    "phone": "Phone",
+    "withMaster": "Specialist: {name}",
+    "gender": {
+      "female": "Female",
+      "male": "Male"
+    },
+    "notFound": "Profile not found",
+    "notFoundHint": "It may be inactive or the link is outdated.",
+    "chooseMaster": "To book, pick a specialist from the studio team."
+  },
+  "partners": {
+    "title": "For specialists and studios",
+    "intro": "A subscription instead of commission: pay a flat monthly fee and keep all the income from your services.",
+    "individual": "Individual plans",
+    "studio": "Studio plan",
+    "perMonth": "{price} / month",
+    "seat": "Per active master: {price} / month",
+    "connection": "One-time fee for connecting a new master: {price}",
+    "formulaTitle": "How a studio’s price is calculated",
+    "formula": "Monthly payment = studio base plan + number of active masters × seat price.",
+    "example": "Example: a studio with {count} masters pays {total} per month.",
+    "registrationSoon": "Registration for specialists and studios opens in the next development stage.",
+    "noPlans": "Plans are not configured yet.",
+    "becomeCta": "Become a partner"
+  },
+  "cityPage": {
+    "title": "{category} — {city}",
+    "titleCity": "Beauty professionals — {city}",
+    "intro": "Specialists and studios for {category} in {city}. Compare prices, portfolios and free time.",
+    "introCity": "All beauty categories in {city}.",
+    "allCities": "Other cities"
+  },
+  "meta": {
+    "searchDescription": "Find beauty specialists and studios: filter by city, category, price and date."
+  },
+  "errors": {
+    "invalidInput": "Please check the entered data.",
+    "invalidCredentials": "Wrong e-mail or password.",
+    "rateLimited": "Too many attempts. Please try again later.",
+    "weakPassword": "Password is too weak: at least 10 characters and 3 character types (lower, upper, digits, symbols).",
+    "emailTaken": "An account with this e-mail already exists. Log in or reset your password.",
+    "termsRequired": "You must accept the terms.",
+    "tokenInvalid": "The link is invalid or expired. Request a new one.",
+    "loginRequired": "Please log in to continue.",
+    "forbidden": "You do not have permission for this action.",
+    "unexpected": "Something went wrong. Please try again.",
+    "slot_unavailable": "This time is already taken or unavailable. Pick another one.",
+    "too_many": "Too many upcoming bookings. Cancel one first.",
+    "own_service": "You cannot book yourself.",
+    "no_price": "This service has no price set.",
+    "invalid_state": "This action is not available for this booking right now.",
+    "too_late": "A booking can be rescheduled at least 2 hours before it starts.",
+    "invalid_input": "Please check the data and choose a time.",
+    "not_found": "Booking not found.",
+    "provider_limited": "Booking with this specialist is temporarily unavailable.",
+    "billing_forbidden": "This action is for specialists only.",
+    "billing_plan_unavailable": "This plan is not available.",
+    "billing_already_subscribed": "You already have an active subscription. To change plan, cancel it at period end and choose a new one.",
+    "billing_not_found": "Payment or subscription not found.",
+    "billing_invalid_state": "This action is not available right now.",
+    "billing_provider_unavailable": "Payments are temporarily unavailable. Please try later.",
+    "verifyFirst": "Please confirm your e-mail first.",
+    "profileIncomplete": "Your profile is not complete yet — finish the checklist items.",
+    "scheduleInvalid": "Check the schedule: “to” must be later than “from” and ranges must not overlap.",
+    "needMasterProfile": "To join a studio, create a specialist profile first.",
+    "inviteWrongAccount": "This invitation was sent to a different e-mail. Log in with the right account.",
+    "alreadyMember": "This specialist is already in the team.",
+    "inviteExists": "An invitation was already sent to this address.",
+    "multiStudioNotAllowed": "Your profile does not allow working in several studios.",
+    "branchLimit": "Your plan’s branch limit is reached.",
+    "deleteOwnsStudio": "You own a studio. Transfer or close it first — contact support.",
+    "deleteHasBookings": "You have upcoming bookings. Cancel them or wait until they are completed."
+  },
+  "auth": {
+    "loginTitle": "Log in",
+    "registerTitle": "Create an account",
+    "registerIntro": "Free for clients. Specialists and studios register separately.",
+    "forgotTitle": "Reset password",
+    "forgotIntro": "Enter your e-mail — we will send a link to set a new password.",
+    "resetTitle": "New password",
+    "verifyTitle": "Confirm your e-mail",
+    "verifyIntro": "Press the button to confirm your address.",
+    "verifyHint": "Confirm your e-mail to book specialists. We sent you a message.",
+    "email": "E-mail",
+    "password": "Password",
+    "newPassword": "New password",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone",
+    "passwordHint": "At least 10 characters, 3 character types.",
+    "terms": "I accept the terms of service and privacy policy",
+    "loginBtn": "Log in",
+    "registerBtn": "Sign up",
+    "sendResetBtn": "Send link",
+    "resetBtn": "Change password",
+    "verifyBtn": "Confirm e-mail",
+    "haveAccount": "Already have an account? Log in",
+    "noAccount": "No account? Sign up",
+    "forgotLink": "Forgot password?",
+    "logout": "Log out",
+    "login": "Log in",
+    "register": "Sign up",
+    "resetDone": "Password changed. Log in with the new password.",
+    "resend": "Resend e-mail",
+    "msg": {
+      "resetSent": "If the account exists, we sent an e-mail with a link.",
+      "verified": "E-mail confirmed. Thank you!",
+      "verificationSent": "E-mail sent.",
+      "saved": "Saved.",
+      "booked": "Booking created. The specialist will confirm it soon.",
+      "rescheduled": "Booking rescheduled. The specialist must confirm the new time.",
+      "reviewSent": "Thank you! Your review appears after moderation.",
+      "paid": "Payment confirmed.",
+      "payFailed": "Payment declined.",
+      "published": "Profile published. It appears in the catalog after the plan payment is confirmed.",
+      "inviteSent": "Invitation sent."
+    }
+  },
+  "account": {
+    "title": "My account",
+    "hello": "Welcome, {name}!",
+    "upcoming": "Upcoming bookings",
+    "history": "History",
+    "favorites": "Favorites",
+    "notifications": "Notifications",
+    "noUpcoming": "No upcoming bookings.",
+    "noHistory": "History is empty.",
+    "noFavorites": "You have not saved anyone yet.",
+    "noNotifications": "No notifications.",
+    "cancel": "Cancel",
+    "reschedule": "Reschedule",
+    "rescheduleNote": "After rescheduling, the specialist must confirm the new time.",
+    "confirmCancel": "Cancel this booking?",
+    "markRead": "Mark all as read",
+    "profile": "Profile",
+    "security": "Security",
+    "currentPassword": "Current password",
+    "savePassword": "Change password",
+    "ratingLabel": "Rating",
+    "reviewText": "Your review (optional)",
+    "sendReview": "Send review",
+    "reviewPending": "Your review is awaiting moderation.",
+    "reviewPublished": "Your review is published.",
+    "status": {
+      "PENDING": "Awaiting confirmation",
+      "CONFIRMED": "Confirmed",
+      "CANCELLED_BY_CLIENT": "Cancelled by you",
+      "CANCELLED_BY_PROVIDER": "Cancelled by the specialist",
+      "COMPLETED": "Completed",
+      "NO_SHOW": "No-show"
+    },
+    "delete": {
+      "title": "Delete account",
+      "note": "Your personal data will be erased permanently. Bookings and payments remain, anonymised. Deletion is not possible while you have upcoming bookings or own a studio.",
+      "confirm": "Delete your account permanently?",
+      "button": "Delete account"
+    }
+  },
+  "booking": {
+    "title": "Book now",
+    "service": "Service",
+    "date": "Date",
+    "time": "Time",
+    "contact": "Contact details",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "E-mail",
+    "note": "Comment (optional)",
+    "submit": "Book",
+    "loginToBook": "Log in or sign up to book.",
+    "verifyToBook": "Confirm your e-mail to book.",
+    "noSlots": "No free time in the coming days.",
+    "timezoneNote": "Local time ({tz})."
+  },
+  "dashboard": {
+    "title": "Specialist dashboard",
+    "pending": "Awaiting confirmation",
+    "upcoming": "Confirmed",
+    "past": "Past and cancelled",
+    "confirm": "Confirm",
+    "complete": "Mark completed",
+    "client": "Client",
+    "noBookings": "No bookings.",
+    "notMaster": "The dashboard is for specialists. Specialist registration arrives in the next step.",
+    "bookings": "Bookings",
+    "profile": "Profile",
+    "schedule": "Schedule",
+    "avatar": "Profile photo",
+    "cover": "Cover",
+    "workArea": "District or note about the workplace",
+    "showGender": "Show gender on my profile",
+    "statusPublished": "Profile is published",
+    "statusDraft": "Profile is a draft",
+    "missing": {
+      "avatar": "Add a profile photo",
+      "category": "Choose at least one category",
+      "service": "Add a service with a price",
+      "schedule": "Set your working hours"
+    },
+    "publishNote": "The profile appears in the catalog after publishing and a confirmed plan payment.",
+    "publish": "Publish",
+    "unpublish": "Unpublish",
+    "caption": "Caption",
+    "addWork": "Add a photo or video of your work",
+    "noWorks": "Your portfolio is empty.",
+    "confirmDelete": "Delete?",
+    "delete": "Delete",
+    "duration": "Duration, min",
+    "buffer": "Pause after, min",
+    "priceUah": "Price, UAH",
+    "priceFrom": "“From” price",
+    "description": "Description",
+    "addService": "Add service",
+    "scheduleHint": "The second range of a day starts after a break. An empty day = day off.",
+    "from": "From",
+    "fromAfterBreak": "After break from",
+    "to": "To",
+    "addDayOff": "Add day off",
+    "daysOff": "Days off & vacations",
+    "addressHint": "The address is used for the map and nearby search."
+  },
+  "favorite": {
+    "add": "Add to favorites",
+    "remove": "Remove from favorites"
+  },
+  "email": {
+    "verify": {
+      "subject": "Confirm your e-mail — Lumera",
+      "body": "Hi {name}!\n\nConfirm your address using this link (valid for 48 hours):\n{link}\n\nIf this was not you, just ignore this e-mail."
+    },
+    "reset": {
+      "subject": "Password reset — Lumera",
+      "body": "Hi {name}!\n\nSet a new password with this link (valid for 1 hour):\n{link}\n\nIf you did not request this, ignore the e-mail — your password stays the same."
+    },
+    "booking": {
+      "new": {
+        "subject": "New booking — Lumera",
+        "body": "{name} booked “{service}” for {when}. Please confirm it in your dashboard."
+      },
+      "created": {
+        "subject": "Booking created — Lumera",
+        "body": "Your booking for “{service}” with {name} on {when} was created and awaits confirmation."
+      },
+      "confirmed": {
+        "subject": "Booking confirmed — Lumera",
+        "body": "The specialist confirmed your booking for “{service}” on {when}."
+      },
+      "cancelled": {
+        "subject": "Booking cancelled — Lumera",
+        "body": "The booking for “{service}” ({when}) was cancelled."
+      },
+      "rescheduled": {
+        "subject": "Booking rescheduled — Lumera",
+        "body": "{name} moved the booking for “{service}” to {when}. It needs a new confirmation."
+      },
+      "completed": {
+        "subject": "Visit completed — Lumera",
+        "body": "Thank you for your visit (“{service}”)! Please leave a review in your account."
+      }
+    },
+    "billing": {
+      "activated": {
+        "subject": "Subscription activated — Lumera",
+        "body": "Payment for the “{service}” plan ({name}) received. Your subscription is valid until {when}."
+      },
+      "upcoming": {
+        "subject": "Upcoming charge — Lumera",
+        "body": "Your paid period for “{service}” ends on {when}. Renewal amount: {name}."
+      },
+      "due": {
+        "subject": "Payment due — Lumera",
+        "body": "Please pay the renewal of “{service}” ({name}) in your dashboard, section “Subscription & payments”."
+      },
+      "grace": {
+        "subject": "Grace period — Lumera",
+        "body": "Your “{service}” subscription was not renewed. New bookings are disabled. Pay before {when} or your profile will be hidden."
+      },
+      "expired": {
+        "subject": "Subscription ended — Lumera",
+        "body": "Your “{service}” subscription ended due to non-payment. Your profile is hidden from the catalog."
+      },
+      "cancelled": {
+        "subject": "Subscription cancelled — Lumera",
+        "body": "Your “{service}” subscription was cancelled and will not renew."
+      }
+    },
+    "invite": {
+      "subject": "Invitation to “{studio}” — Lumera",
+      "body": "“{studio}” invites you to join their team on Lumera.\n\nAccept or decline (valid for 14 days):\n{link}\n\nIf you did not expect this e-mail, just ignore it."
+    }
+  },
+  "notification": {
+    "booking": {
+      "new": "New booking from {name}: {service}, {when}",
+      "created": "Booking created: {service}, {when}",
+      "confirmed": "Booking confirmed: {service}, {when}",
+      "cancelled": "Booking cancelled: {service}, {when}",
+      "rescheduled": "Booking rescheduled: {service}, {when}",
+      "completed": "Visit completed: {service}. Leave a review!"
+    },
+    "billing": {
+      "activated": "Subscription “{service}” activated: {name}",
+      "upcoming": "Upcoming charge for “{service}”: {name}, {when}",
+      "due": "Payment due for “{service}”: {name}",
+      "grace": "Grace period for “{service}” until {when}",
+      "expired": "Subscription “{service}” ended",
+      "cancelled": "Subscription “{service}” cancelled"
+    }
+  },
+  "billing": {
+    "title": "Subscription & payments",
+    "noSubscription": "You have no subscription yet. Your profile goes public after a confirmed payment.",
+    "choosePlan": "Choose a plan",
+    "choose": "Choose & pay",
+    "profileNote": "After payment is confirmed your profile appears in the catalog. You can fill in the profile before paying.",
+    "demo": "demo",
+    "status": {
+      "INCOMPLETE": "Awaiting payment",
+      "ACTIVE": "Active",
+      "PAST_DUE": "Payment due",
+      "GRACE": "Grace period",
+      "CANCELLED": "Cancelled",
+      "EXPIRED": "Ended"
+    },
+    "nextPayment": "Next charge: {date}",
+    "endsOn": "Subscription ends on {date}",
+    "graceNote": "Your subscription was not renewed. New bookings are disabled. Pay before {date} or your profile will be hidden.",
+    "pastDueNote": "Your period has ended — pay the renewal to keep your access.",
+    "incompleteNote": "Payment is not confirmed yet. Complete it to make your profile public.",
+    "payNow": "Pay now",
+    "cancel": "Cancel at period end",
+    "resume": "Resume auto-renewal",
+    "confirmCancel": "Cancel the subscription at the end of the paid period?",
+    "history": "Payment history",
+    "noPayments": "No payments yet.",
+    "date": "Date",
+    "amount": "Amount",
+    "statusCol": "Status",
+    "nextPaymentCol": "Next payment",
+    "paymentStatus": {
+      "PENDING": "Pending",
+      "SUCCEEDED": "Paid",
+      "FAILED": "Failed",
+      "REFUNDED": "Refunded",
+      "CANCELLED": "Cancelled"
+    },
+    "test": {
+      "title": "Test payment",
+      "warning": "This is a DEVELOPMENT TEST mode: no real money is charged.",
+      "success": "Simulate successful payment",
+      "fail": "Simulate declined payment",
+      "paid": "Test payment confirmed. Subscription activated.",
+      "payFailed": "Test payment declined."
+    }
+  },
+  "admin": {
+    "overview": "Overview",
+    "users": "Users",
+    "reviews": "Reviews",
+    "plans": "Plans",
+    "payments": "Payments",
+    "subscriptions": "Subscriptions",
+    "stat": {
+      "clients": "Clients",
+      "masters": "Specialists (published)",
+      "studios": "Studios (published)",
+      "bookings30": "Bookings, last 30 days",
+      "activeSubs": "Active subscriptions",
+      "mrr": "Monthly recurring revenue"
+    },
+    "revenue": "Revenue, 6 months",
+    "revenueNote": "Confirmed payments only; demo subscriptions excluded.",
+    "searchUsers": "E-mail or name",
+    "user": "User",
+    "roles": "Roles",
+    "block": "Block",
+    "unblock": "Unblock",
+    "confirmBlock": "Block this user? They will be signed out.",
+    "note": "Note (optional)",
+    "approve": "Publish",
+    "reject": "Reject",
+    "noPendingReviews": "No reviews awaiting moderation.",
+    "plansNote": "A price change applies to future charges; payments already issued keep their amount.",
+    "priceUah": "Price, UAH / month",
+    "seatUah": "Per active master, UAH / month",
+    "feeUah": "One-time master connection fee, UAH",
+    "planActive": "Plan is available for selection",
+    "provider": "Provider",
+    "subscriber": "Subscriber",
+    "plan": "Plan",
+    "content": {
+      "title_page": "Site appearance",
+      "hero": "Home hero background",
+      "heroHint": "Upload a photo or a video (MP4/WebM, up to 100 MB; ideally 5–15 s, no sound). For video add a poster — it shows while loading and when animations are reduced.",
+      "heroMedia": "Photo or video",
+      "poster": "Video poster",
+      "overlay": "Darkening for text readability",
+      "removeHero": "Remove background (restore default)",
+      "texts": "Headline and subtitle",
+      "title": "Headline",
+      "subtitle": "Subtitle",
+      "textsHint": "Empty field = default translation.",
+      "cta": "“For specialists” block",
+      "ctaBg": "Background photo",
+      "removeCta": "Remove background photo",
+      "logo": "Site logo",
+      "logoFile": "Logo file (PNG/WebP, transparent background)",
+      "removeLogo": "Remove logo (restore default)",
+      "legal": "Details for terms and policy",
+      "legalHint": "Inserted into the Terms and Privacy pages. The texts are templates: have a lawyer review them before launch.",
+      "company": "Owner name (legal entity / sole trader)",
+      "contactEmail": "E-mail for data requests"
+    }
+  },
+  "media": {
+    "choose": "Choose file",
+    "remove": "Remove",
+    "errors": {
+      "unsupported_type": "Unsupported format (JPG, PNG, WebP, AVIF, MP4, WebM).",
+      "too_large": "File is too large (photos up to 10 MB, video up to 100 MB).",
+      "content_mismatch": "File content does not match its type.",
+      "empty": "Empty file.",
+      "forbidden": "Not allowed.",
+      "unauthorized": "Log in to upload files.",
+      "rate_limited": "Too many uploads. Please wait.",
+      "upload_failed": "Upload failed. Please try again.",
+      "invalid_request": "Invalid request."
+    }
+  },
+  "wizard": {
+    "title": "Become a specialist",
+    "intro": "Create your profile in a few steps. It stays a draft until you publish it.",
+    "step1": "Account type",
+    "step2": "About you",
+    "step3": "Focus & experience",
+    "step4": "Confirm",
+    "stepOf": "Step {n} of {total}",
+    "individual": "Individual specialist",
+    "individualHint": "I work on my own or join a studio",
+    "studio": "Studio or salon",
+    "studioHint": "A team of specialists, several branches",
+    "displayName": "Profile name",
+    "headline": "One-line summary",
+    "headlineHint": "For example: “Fine-line tattoos”",
+    "bio": "Description",
+    "experienceSince": "Year you started",
+    "finalNote": "Next you will add photos, portfolio, services and schedule, choose a plan and publish the profile.",
+    "create": "Create profile"
+  },
+  "studio": {
+    "logo": "Logo",
+    "name": "Studio name",
+    "address": "Address",
+    "create": "Create studio",
+    "createTitle": "Register a studio",
+    "createIntro": "A studio gets its own page, a team dashboard and a separate subscription.",
+    "publishNote": "A logo is required to publish. The studio appears in the catalog after the plan payment is confirmed.",
+    "branchName": "Branch name",
+    "addBranch": "Add branch",
+    "inviteEmail": "Specialist e-mail",
+    "invite": "Invite",
+    "makeMaster": "Make specialist",
+    "makeAdmin": "Make admin",
+    "confirmRemove": "Remove from the team? The specialist keeps their profile, portfolio and reviews.",
+    "remove": "Remove",
+    "revoke": "Revoke",
+    "accept": "Accept",
+    "decline": "Decline",
+    "consentOff": "Do not let the studio add to my portfolio",
+    "consentOn": "Let the studio add to my portfolio",
+    "confirmLeave": "Leave the studio? Your profile and reviews stay with you.",
+    "leave": "Leave studio",
+    "consentNote": "The studio only manages what relates to the collaboration and loses access as soon as you leave.",
+    "msg": {
+      "inviteAccepted": "You joined the studio.",
+      "inviteDeclined": "Invitation declined."
+    },
+    "inviteTitle": "Studio invitation",
+    "inviteIntro": "“{studio}” invites you to join the team.",
+    "team": "Team",
+    "stat": {
+      "team": "Specialists in the team",
+      "bookings30": "Bookings, 30 days",
+      "pending": "Awaiting confirmation",
+      "revenue30": "Completed visits, 30 days"
+    },
+    "topMasters": "Most active specialists",
+    "role": {
+      "OWNER": "Owner",
+      "ADMIN": "Admin",
+      "MASTER": "Specialist"
+    },
+    "feeUnpaid": "one-time connection fee unpaid",
+    "inviteNote": "The specialist receives an e-mail. The invitation is valid for 14 days. Re-inviting never charges the one-time fee twice.",
+    "pending": "Awaiting reply",
+    "invoice": "Invoice",
+    "item": {
+      "studio_base": "Studio base plan",
+      "studio_seats": "Active specialists",
+      "connection_fee": "One-time specialist connection"
+    },
+    "total": "Total",
+    "payFees": "Pay connection fee for new specialists ({amount})",
+    "billingNote": "Monthly payment = base plan + number of active specialists × seat price. New specialists pay the one-time connection fee once.",
+    "panel": "Studio"
+  },
+  "map": {
+    "title": "Specialists on the map",
+    "subtitle": "Pick a category (for tattoo — a style too) and matching specialists appear on the map. “Near me” shows the closest.",
+    "allCategories": "All categories",
+    "style": "Style",
+    "allStyles": "All styles",
+    "nearMe": "Near me",
+    "found": {
+      "one": "{count} specialist",
+      "other": "{count} specialists"
+    },
+    "sortedByDistance": "by distance",
+    "none": "No specialists on the map in this category yet. Try another style or category.",
+    "error": "Could not load specialists. Please try again.",
+    "show": "On map"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "This policy explains what data {company} (“we”) collects in the Lumera service and how we use it.",
+      "updated": "Оновлено: {date}",
+      "s": {
+        "s1": {
+          "title": "Who we are",
+          "body": "The data controller is {company}. For any data question write to {email}."
+        },
+        "s2": {
+          "title": "What data we collect",
+          "body": "Account data: first and last name, e-mail, phone (optional), password as an irreversible hash.\n\nBooking data: service, time, your contact details and comment — received by the specialist you book.\n\nSpecialist and studio data: profile, photos and videos, prices, schedule, address.\n\nTechnical data: IP address and browser type at login (for security), error logs."
+        },
+        "s3": {
+          "title": "Location",
+          "body": "“Near me” buttons ask for your location in your browser. Coordinates are used only to sort by distance in your browser and are not stored on our server."
+        },
+        "s4": {
+          "title": "Why we use data",
+          "body": "To create and secure your account, process and notify you about bookings, show specialist and studio profiles, accept subscription payments, prevent fraud, comply with the law and improve the service."
+        },
+        "s5": {
+          "title": "Who we share data with",
+          "body": "With the specialist — the booking contact details. With providers that help run the service: hosting, e-mail delivery, payment providers (we never see or store card numbers), OpenStreetMap maps (your browser contacts their servers when a map is shown). With authorities — only when legally required. We do not sell personal data."
+        },
+        "s6": {
+          "title": "Cookies",
+          "body": "We use only strictly necessary cookies: the login session and the selected language. There are no third-party advertising or analytics cookies. If we add them later, we will ask for your consent."
+        },
+        "s7": {
+          "title": "How long we keep data",
+          "body": "Account data — while the account exists. Bookings and payments — as long as required by law and for resolving disputes. After you delete your account, personal data is anonymised."
+        },
+        "s8": {
+          "title": "Your rights",
+          "body": "You can view and correct your data in your account, delete the account under “Security”, and contact us at {email} to access, correct, restrict or erase data, and lodge a complaint with a data-protection authority."
+        },
+        "s9": {
+          "title": "Security",
+          "body": "Passwords are stored as hashes, connections use HTTPS and access is separated by roles. No system is perfectly secure, so please use a unique password."
+        },
+        "s10": {
+          "title": "Age",
+          "body": "The service is intended for people aged 18 and over."
+        },
+        "s11": {
+          "title": "Changes",
+          "body": "We may update this policy; the current version is always on this page."
+        },
+        "s12": {
+          "title": "Contact",
+          "body": "{company}, {email}."
+        }
+      }
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "intro": "These terms govern the use of the Lumera service operated by {company}.",
+      "updated": "Оновлено: {date}",
+      "s": {
+        "s1": {
+          "title": "What Lumera is",
+          "body": "Lumera is a marketplace where clients find beauty specialists and studios and book them. Services are provided by the specialists and studios themselves; {company} is not a party to the service agreement and is not responsible for service quality."
+        },
+        "s2": {
+          "title": "Account",
+          "body": "You provide accurate data, keep your password secret and are responsible for activity in your account. We may block an account for violating these terms."
+        },
+        "s3": {
+          "title": "Bookings and cancellations",
+          "body": "A booking is confirmed by the specialist. You can cancel or reschedule in your account; a specialist may set their own conditions and must tell you about them. Do not book if you do not intend to come."
+        },
+        "s4": {
+          "title": "Reviews",
+          "body": "A review can be left only after a completed visit. Reviews are moderated; we may reject a review containing insults, spam or false statements."
+        },
+        "s5": {
+          "title": "Specialists and studios",
+          "body": "You are responsible for the accuracy of your profile, prices and schedule, hold the rights to the materials you publish and comply with the law for your activity (including hygiene rules and age restrictions). A profile is published while a subscription is active."
+        },
+        "s6": {
+          "title": "Subscriptions and payment",
+          "body": "Specialists and studios pay a flat subscription under the chosen plan. Prices and conditions are shown on the plans page and may change for future payments. You can cancel in your account; access remains until the end of the paid period. If payment fails, a grace period applies, after which the profile is hidden."
+        },
+        "s7": {
+          "title": "User content",
+          "body": "You keep the rights to the photos and videos you upload and grant {company} a free, non-exclusive licence to display them in the service while your profile is active."
+        },
+        "s8": {
+          "title": "Prohibited",
+          "body": "Illegal content, fraud, attempts to hack the service, collecting other users’ data, creating fake bookings and reviews."
+        },
+        "s9": {
+          "title": "Liability",
+          "body": "The service is provided “as is”. To the extent permitted by law, {company} is not liable for indirect losses or for the actions of specialists, studios and clients."
+        },
+        "s10": {
+          "title": "Changes",
+          "body": "We may change these terms; by continuing to use the service after the changes you accept the new version."
+        },
+        "s11": {
+          "title": "Governing law",
+          "body": "These terms are governed by the law of Ukraine, unless mandatory rules where you live provide otherwise."
+        },
+        "s12": {
+          "title": "Contact",
+          "body": "{company}, {email}."
+        }
+      }
+    },
+    "termsLink": "terms of service",
+    "privacyLink": "privacy policy",
+    "consentPrefix": "I accept the",
+    "consentAnd": "and",
+    "footerTerms": "Terms",
+    "footerPrivacy": "Privacy"
+  }
+}

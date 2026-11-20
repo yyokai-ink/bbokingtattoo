@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ───────── Design tokens (HSL triplets; used as hsl(var(--x) / alpha)) ───────── */
+:root {
+  --bg: 36 33% 97%;          /* warm ivory */
+  --surface: 0 0% 100%;
+  --muted: 30 20% 93%;
+  --border: 30 14% 86%;
+  --fg: 262 28% 12%;         /* ink */
+  --fg-muted: 262 10% 40%;
+  --brand: 262 42% 28%;      /* deep plum */
+  --brand-fg: 36 33% 97%;
+  --brand-soft: 262 40% 94%;
+  --accent: 12 78% 58%;      /* coral */
+  --accent-fg: 0 0% 100%;
+  --success: 152 55% 32%;
+  --warning: 36 90% 45%;
+  --danger: 0 68% 46%;
+  --info: 212 70% 42%;
+  color-scheme: light;
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(4.5rem + env(safe-area-inset-top, 0px)); }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  /* Double-tap no longer zooms the page; pinch-zoom stays available (accessibility). */
+  html, body, a, button, input, select, textarea, summary, label, [role='button'], [role='tab'], [role='radio'] { touch-action: manipulation; }
+  body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  ul[class*='overflow-y-auto'], [role='dialog'] { overscroll-behavior: contain; }
+  ::selection { background: hsl(var(--brand) / .18); }
+  button, a { -webkit-user-select: none; user-select: none; }
+  body {
+    @apply bg-bg font-sans text-fg antialiased;
+    min-height: 100dvh;
+    overflow-x: hidden; /* guard: no horizontal page scroll (also fix the offending element, never rely on this) */
+    -webkit-tap-highlight-color: transparent;
+  }
+  img, svg, video { max-width: 100%; height: auto; }
+  :focus-visible { @apply outline-none ring-2 ring-brand ring-offset-2 ring-offset-bg; }
+  /* 16px inputs prevent iOS Safari zoom-on-focus */
+  input, select, textarea { font-size: 16px; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+}
+
+@layer components {
+  .h-display { @apply text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl; }
+  .h-section { @apply text-xl font-bold tracking-tight sm:text-2xl; }
+  .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+  /* Table → stacked cards on mobile: <table class="responsive-table"> + data-label on every <td> */
+  .responsive-table { @apply w-full text-left text-sm; }
+  @media (max-width: 767px) {
+    .responsive-table thead { @apply sr-only; }
+    .responsive-table tr { @apply mb-3 block rounded-lg border bg-surface p-3; }
+    .responsive-table td { @apply flex items-center justify-between gap-4 py-1; }
+    .responsive-table td::before { content: attr(data-label); @apply text-xs font-medium text-fg-muted; }
+  }
+}
+
+@layer components {
+  /* native <select>/<input> look shared by filters and the hero search */
+  .control { @apply min-h-touch w-full rounded-md border border-border bg-surface px-3 text-fg hover:border-fg-muted; }
+  .chip { @apply inline-flex min-h-9 items-center rounded-full border px-3 text-sm font-medium transition-colors; }
+  .chip-active { @apply border-brand bg-brand text-brand-fg; }
+  .chip-idle { @apply bg-surface text-fg hover:bg-muted; }
+}
+
+/* map markers (Leaflet divIcon) */
+.lumera-marker { display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: 9999px; background: hsl(var(--brand)); color: hsl(var(--brand-fg)); font: 700 .8rem/1 var(--font-sans), system-ui, sans-serif; border: 3px solid #fff; box-shadow: 0 4px 14px rgb(0 0 0 / .35); }
+.lumera-marker--me { background: hsl(var(--accent)); width: 1.25rem; height: 1.25rem; }
+.leaflet-container { font-family: var(--font-sans), system-ui, sans-serif; border-radius: inherit; }
+.leaflet-popup-content a { color: hsl(var(--brand)); font-weight: 600; text-decoration: none; }
+
+@layer utilities {
+  /* skip layout/paint of below-the-fold sections until they are near the viewport */
+  .cv-auto { content-visibility: auto; contain-intrinsic-size: auto 900px; }
+}
+/* lighter experience on small / low-power screens */
+@media (max-width: 767px) { .shadow-pop { box-shadow: 0 8px 24px hsl(var(--fg) / .14); } }
+@media (prefers-reduced-data: reduce) { video { display: none !important; } }

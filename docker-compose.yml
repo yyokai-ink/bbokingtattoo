@@ -1,0 +1,41 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: lumera
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-lumera}
+      POSTGRES_DB: lumera
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lumera"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  app:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db: { condition: service_healthy }
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://lumera:${DB_PASSWORD:-lumera}@db:5432/lumera?schema=public
+    volumes: [uploads:/app/uploads]   # photos/videos live here when no S3 is configured
+    ports: ["3000:3000"]
+
+  # Automatic HTTPS (needed for the installable app). Start with:  docker compose --profile https up -d
+  caddy:
+    image: caddy:2-alpine
+    profiles: ["https"]
+    restart: unless-stopped
+    depends_on: [app]
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+    ports: ["80:80", "443:443"]
+    volumes: [./Caddyfile:/etc/caddy/Caddyfile:ro, caddy_data:/data]
+
+volumes:
+  pgdata:
+  uploads:
+  caddy_data:
